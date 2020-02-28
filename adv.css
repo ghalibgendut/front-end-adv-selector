@@ -1,0 +1,66 @@
+/* ################## */
+/* Grouping Selector */
+/* ################ */
+
+/* Semua tag p, h1, h2, akan memiliki style yang sama */
+/* 
+    apabila menggunakan ',' (koma) maka semua style yang disebutkan akan memiliki style yang sama
+    pabila menggunakan spasi maka yang terkena style adalah tag yang ada didalam tag terluar contoh
+    
+    div p{
+    } maka yang terkna style adalag p yang ada didalam p
+
+    apabila tag diberikan class atau id maka hanya tag yang memiliki class atau id tersebut yang berubah
+
+    contoh:
+
+    div#cth p.cth{
+    } maka yang terpengaruh adalah tag p yang memiliki class cth dan berada di dalam tag div dengan id cth
+
+    sementara apabila dipisah dengan ',' (koma) maka tag yang berada dibelakang koma 
+    akan ikut berubah dengan tag yang ada di paling depan
+
+    contoh :
+
+    div#cth p.cth, ul{
+    } maka style akan berpengaruh pada tag p yang memiliki class cth dan berada dalam tag div 
+    yang memiliki id cth, dan tag ul akan ikut berubah tidak terbatas pada div#cth karena ul sejajar dengan div#cth
+*/
+p, h1, h2{
+
+}
+
+/* semua tag p yang memiliki id main */
+
+p#main{
+
+}
+
+/* semua tag p yang memiliki class secondary */
+
+p.secondary {
+
+}
+
+/* semua tag p yang memiliki id main atau class secondary akan memiliki style yg sama */
+p#main, p.secondary{
+
+}
+
+
+/* semua tag p yang ada didalam div */
+div p{
+
+}
+
+/* semua tag i yang ada didalam p, dimana p ada didalam div */
+
+div p i{
+
+}
+
+
+
+
+
+
