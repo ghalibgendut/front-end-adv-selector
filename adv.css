@@ -81,7 +81,7 @@ div > p > img{
 
 
 input#btn{
-    width: 90px;
+    width: 140px;
     height: 40px;
     color: white;
     background-color: #4646ff;
@@ -94,6 +94,16 @@ input#btn:hover{
     color:  #4646ff;
     background-color: #ffffff;
     border: 1px solid black;
+}
+
+/* jika tag input dengan id yang sama diklik */
+input#btn:active{
+    width: 120px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #59aef3;
+    font-size: 15px;
+    font-weight: lighter;
 }
 
 
