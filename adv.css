@@ -61,6 +61,45 @@ div p i{
 
 
 
+/* ############### */
+/* CHILD SELECTOR */
+/* ############# */
+
+
+/* semua tag image yang child dari div */
+div > img{
+    border: 1px solid black;
+}
+
+/* 
+    tag img yang merupakan child dari p
+    dimana p merupakan child dari div
+*/
+div > p > img{
+    border: 1px solid black;
+}
+
+
+input#btn{
+    width: 90px;
+    height: 40px;
+    color: white;
+    background-color: #4646ff;
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+/* Jika mouse diarahkan ke tag inut dengan id yang sama */
+input#btn:hover{
+    color:  #4646ff;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+
+
+
+
 
 
 
